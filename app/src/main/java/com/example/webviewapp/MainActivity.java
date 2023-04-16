@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     WebView myWebView;
 
     public void showExternalWebPage(){
-        // TODO: Add your code for showing external web page here
+        myWebView.loadUrl("https://his.se");
     }
 
     public void showInternalWebPage(){
-        // TODO: Add your code for showing internal web page here
+        myWebView.loadUrl("https://his.se");
     }
 
     @Override
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         myWebView.setWebViewClient(new WebViewClient()); // Do not open in Chrome!
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://his.se");
 
         /*
         * Rename your App. Tip: Values->Strings
